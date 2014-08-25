@@ -21,6 +21,11 @@
 		04BFB7B219837DB5000AC5B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BFB79419837DB5000AC5B7 /* UIKit.framework */; };
 		04BFB7BA19837DB5000AC5B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB7B819837DB5000AC5B7 /* InfoPlist.strings */; };
 		04BFB7BC19837DB5000AC5B7 /* _048Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFB7BB19837DB5000AC5B7 /* _048Tests.m */; };
+		04BFB7C819837E04000AC5B7 /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFB7C719837E04000AC5B7 /* Element.m */; };
+		04BFB7CB19837E28000AC5B7 /* Background.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFB7CA19837E28000AC5B7 /* Background.m */; };
+		04BFB7D219837EC4000AC5B7 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFB7D119837EC4000AC5B7 /* BackgroundView.m */; };
+		04BFB7D61983C094000AC5B7 /* ElementLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFB7D51983C094000AC5B7 /* ElementLabel.m */; };
+		04BFB7D91983EC76000AC5B7 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFB7D81983EC76000AC5B7 /* GameManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		04BFB7B719837DB5000AC5B7 /* 2048Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "2048Tests-Info.plist"; sourceTree = "<group>"; };
 		04BFB7B919837DB5000AC5B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04BFB7BB19837DB5000AC5B7 /* _048Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _048Tests.m; sourceTree = "<group>"; };
+		04BFB7C619837E04000AC5B7 /* Element.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Element.h; sourceTree = "<group>"; };
+		04BFB7C719837E04000AC5B7 /* Element.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Element.m; sourceTree = "<group>"; };
+		04BFB7C919837E28000AC5B7 /* Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Background.h; sourceTree = "<group>"; };
+		04BFB7CA19837E28000AC5B7 /* Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Background.m; sourceTree = "<group>"; };
+		04BFB7D019837EC4000AC5B7 /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
+		04BFB7D119837EC4000AC5B7 /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
+		04BFB7D41983C094000AC5B7 /* ElementLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementLabel.h; sourceTree = "<group>"; };
+		04BFB7D51983C094000AC5B7 /* ElementLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementLabel.m; sourceTree = "<group>"; };
+		04BFB7D71983EC76000AC5B7 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		04BFB7D81983EC76000AC5B7 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +133,8 @@
 				04BFB7A519837DB5000AC5B7 /* ZJWViewController.h */,
 				04BFB7A619837DB5000AC5B7 /* ZJWViewController.m */,
 				04BFB7A819837DB5000AC5B7 /* Images.xcassets */,
+				04BFB7CC19837E8B000AC5B7 /* View */,
+				04BFB7C519837DD8000AC5B7 /* Model */,
 				04BFB79719837DB5000AC5B7 /* Supporting Files */,
 			);
 			path = 2048;
@@ -152,6 +169,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		04BFB7C519837DD8000AC5B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04BFB7C619837E04000AC5B7 /* Element.h */,
+				04BFB7C719837E04000AC5B7 /* Element.m */,
+				04BFB7C919837E28000AC5B7 /* Background.h */,
+				04BFB7CA19837E28000AC5B7 /* Background.m */,
+				04BFB7D71983EC76000AC5B7 /* GameManager.h */,
+				04BFB7D81983EC76000AC5B7 /* GameManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		04BFB7CC19837E8B000AC5B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04BFB7D41983C094000AC5B7 /* ElementLabel.h */,
+				04BFB7D51983C094000AC5B7 /* ElementLabel.m */,
+				04BFB7D019837EC4000AC5B7 /* BackgroundView.h */,
+				04BFB7D119837EC4000AC5B7 /* BackgroundView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,6 +203,7 @@
 				04BFB78919837DB5000AC5B7 /* Sources */,
 				04BFB78A19837DB5000AC5B7 /* Frameworks */,
 				04BFB78B19837DB5000AC5B7 /* Resources */,
+				04BFB7D31983A92F000AC5B7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -245,13 +287,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04BFB7D31983A92F000AC5B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then /Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\n\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\";\n\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04BFB78919837DB5000AC5B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BFB7D219837EC4000AC5B7 /* BackgroundView.m in Sources */,
 				04BFB7A719837DB5000AC5B7 /* ZJWViewController.m in Sources */,
 				04BFB7A119837DB5000AC5B7 /* ZJWAppDelegate.m in Sources */,
+				04BFB7D61983C094000AC5B7 /* ElementLabel.m in Sources */,
+				04BFB7C819837E04000AC5B7 /* Element.m in Sources */,
+				04BFB7D91983EC76000AC5B7 /* GameManager.m in Sources */,
+				04BFB7CB19837E28000AC5B7 /* Background.m in Sources */,
 				04BFB79D19837DB5000AC5B7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,7 +381,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -334,9 +397,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos7.0;
 			};
 			name = Debug;
 		};
@@ -356,7 +419,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -366,8 +429,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos7.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -457,6 +520,7 @@
 				04BFB7C119837DB5000AC5B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04BFB7C219837DB5000AC5B7 /* Build configuration list for PBXNativeTarget "2048Tests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +529,7 @@
 				04BFB7C419837DB5000AC5B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
